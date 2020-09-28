@@ -15,10 +15,13 @@ class Dog
   #   @breed = args[2]
   # end
 
+  # def initialize(h)
+  # h.each {|k,v| public_send("#{k}=",v)}
+  # end
+
+
   def initialize(h)
-  h.each {|k,v| public_send("#{k}=",v)}
+  h.each {|k,v| self.k = v }
   end
-
-
 
 end
