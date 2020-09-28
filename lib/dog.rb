@@ -62,7 +62,6 @@ def save
       WHERE name = ?
       LIMIT 1
     SQL
-
     DB[:conn].execute(sql,name).map do |row|
       self.new_from_db(row)
     end.first
