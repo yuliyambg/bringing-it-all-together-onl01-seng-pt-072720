@@ -65,7 +65,7 @@ def save
     DB[:conn].execute(sql,name).map do |row|
       self.new_from_db(row)
     end.first
-  ends
+  end
   
 #   def self.find_by_id(id)
 #     sql = "SELECT * FROM dogs WHERE id = ?"
